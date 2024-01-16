@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+ <head>
+
+
+    <title>Personal Portfolio Website</title>
+   <link rel="stylesheet" href="style.css"> 
+   <script src="https://kit.fontawesome.com/0d34f0fdb9.js" crossorigin="anonymous"></script>
+ </head>
+ <body>
+ <div id="header">
+
+    <div class="container">
+
+        <nav>
+            <img src="images" class="logo">
+            <ul id="sidemenu">
+
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>UI/IX Designer and Developer</p>
+            <h1>Hi,I'm <span>Nceba </span><br>Mohale From South Africa</h1>
+        </div>
+    </div>
+
+ </div>
+
+ <div class="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/IMG-20230530-WA0019.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a highly motivated self-driven software developer<br>
+                with a strong passion for creating efficient and innovative solutions.I want to leverage my expertise
+                 to tackle challenging problems,create elegant code and enhance user experience.</p>
+
+                 <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                 </div>
+                 <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Application Development</span><br>Building Android apps</li>
+                        <li><span>Web Development</span><br>Web App development</li>
+                        <li><span>Web/App Automated Testing</span><br>Web App Automation testing</li>
+                    </ul>
+                 </div>
+                 <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023 - Current</span><br>Web/App Automated Testing & Web App development Intern at EWIT(Exceptional Women In Tech) Ltd.</li>
+                        <li><span>2022-2023 Ongoing</span><br>Web App development Online course in UDEMY</li>
+                           
+                    </ul>
+                 </div>
+                 <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022-2023</span><br>Software Development & Software Testing at EWIT(Exceptional Women In Tech)</li>
+                        <li><span>2018-2022</span><br>Software Development at Tshwane University of Technology</li>
+                        
+                        <li><span>2016</span><br>Maths & Science at Tlokweng Seniour Secondary School</li>
+                    </ul>
+                 </div>
+            </div>
+        </div>
+    </div>
+ </div>
+
+ <!----------------------services----------------->
+
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Making positive impact through design,the goal is to deliver advanced and user friendly products to the clients,
+                as a Web designer I take pride in my skills and ambitions to make your life simple</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>It's not just an Interface but an aesthetic front-end is hard to ignore!. I make UI that is easy to use and attracting to users. </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>I build flexible  applications from scratch in order to accomodate the clients' needs. These can run on both Web and Android systems.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+ </div>
+ <!---------------------portfolio------------------------>
+
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work3.jpg">
+                <div class="layer">
+                    <h3>Personal Website</h3>
+                    <p>Connect to the world and your loved ones.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/OIP(1).jpg">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>Enjoy your favourite,latest releases and classic music now.
+                        Download it from play store.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/R(1)(1).jpg">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>Shop from the comfort of your house using just few clicks.
+                        Download it from play store.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <a href="#" class="btn">See more</a>
+
+    </div>
+ </div>
+
+<!-----------------------------contact-------------------->
+
+<div id="contact">
+
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>ncebamohale@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>0795669609</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/feed/"></i><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://web.whatsapp.com/"></i><i class="fa-brands fa-square-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/"></i><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="images/Mohale Nceba Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright<span>&#169</span>2023.Made and mentained by Nceba Mohale</p>
+    </div>
+</div>
+
+
+ <script>
+       var tablinks = document.getElementsByClassName("tab-links"); 
+       var tabcontents = document.getElementsByClassName("tab-contents");
+       
+       function opentab(tabname){
+         
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+       }
+
+ </script>
+
+ <script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+ </script>
+ <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxr2Pzjc4uqXTU_jp-sxjGBnCZhEBVS9jxjMWS8CtmudY7yQOYXAOlUE_8VychQxTwL/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+ </body>
+
+</html>
